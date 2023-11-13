@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+</head>
+<body>
+  <h1>Add User</h1>
+  <form action="/adduser" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password">Password (hashed):</label>
+    <input type="password" id="password" name="password_hash" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <button type="submit">Add User</button>
+  </form>
+
+  <h1>Check User</h1>
+  <form action="/checkuser" method="post">
+    <label for="checkUsername">Username:</label>
+    <input type="text" id="checkUsername" name="username" required><br>
+
+    <label for="checkPassword">Password (hashed):</label>
+    <input type="password" id="checkPassword" name="password_hash" required><br>
+
+    <button type="submit">Check User</button>
+  </form>
+</body>
+</html>
